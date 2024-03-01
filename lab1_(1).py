@@ -70,7 +70,23 @@ print("Your grade is:", grade)
 Convert to the Polish grading system.
 """
 
+# Define variable
+score = float(input("Enter your score: "))
 
+# Determine the grade
+if score >= 90:
+    grade = "5"
+elif score >= 80:
+    grade = "4"
+elif score >= 70:
+    grade = "3"
+elif score >= 60:
+    grade = "2"
+else:
+    grade = "1"
+
+# Print the grade
+print("Your grade is:", grade)
 
 """4. Write a Python program that checks if a number is even or odd."""
 
@@ -90,7 +106,18 @@ print("The number is:", result)
 Change the code so that there are two inputs and the first number it can be devidet.
 """
 
+# Define variable
+number1 = int(input("Enter a number 1: "))
+number2 = int(input("Enter a number 2: "))
 
+
+# Check if the number is even or odd
+if number1 % number2 == 0:
+    result = "yes"
+else:
+    result = "no"
+
+print(result)
 
 """5. Variable types"""
 
@@ -134,7 +161,16 @@ print("The triangle is:", triangle_type)
 Add a check to see if a triangle can be drawn with the given sides.
 """
 
+# Define variables
+side1 = float(input("Enter the length of side 1: "))
+side2 = float(input("Enter the length of side 2: "))
+side3 = float(input("Enter the length of side 3: "))
 
+# Check the type of triangle
+if side1 +side2 < side3 or side2 + side3 < side1 or side3 + side1 < side2:
+    print("No")
+else:
+    print("Yes")
 
 """7. Write a Python program that performs arithmetic operations on two numbers."""
 
@@ -162,7 +198,28 @@ print("Result:", result)
 Add a check to see if someone is trying to divide by zero, if so, give an appropriate message
 """
 
+# Define variables
+num1 = float(input("Enter the first number: "))
+num2 = float(input("Enter the second number: "))
+operation = input("Enter the operation (+, -, *, /): ")
 
+# Perform the operation
+if operation == "+":
+    result = num1 + num2
+elif operation == "-":
+    result = num1 - num2
+elif operation == "*":
+    result = num1 * num2
+elif num2 == 0:
+  print("Divide by zero error")
+  result = "Invalid operation"
+elif operation == "/":
+  result = num1 / num2
+else:
+    result = "Invalid operation"
+
+# Print the result
+print("Result:", result)
 
 """Exercise 8. <br />
 Make a script out of all task and put it on githyb
