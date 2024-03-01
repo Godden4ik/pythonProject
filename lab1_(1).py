@@ -93,7 +93,7 @@ print("Your grade is:", grade)
 # Define variable
 number = int(input("Enter a number: "))
 
-# Check if the number is even or odd
+
 if number % 2 == 0:
     result = "Even"
 else:
@@ -111,7 +111,6 @@ number1 = int(input("Enter a number 1: "))
 number2 = int(input("Enter a number 2: "))
 
 
-# Check if the number is even or odd
 if number1 % number2 == 0:
     result = "yes"
 else:
