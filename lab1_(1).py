@@ -165,11 +165,21 @@ side1 = float(input("Enter the length of side 1: "))
 side2 = float(input("Enter the length of side 2: "))
 side3 = float(input("Enter the length of side 3: "))
 
-# Check the type of triangle
-if side1 +side2 < side3 or side2 + side3 < side1 or side3 + side1 < side2:
-    print("No")
+if side1 +side2 < side3 or side2 + side3 or side1 or side3 + side1 < side2:
+    print("it does not exist")
 else:
-    print("Yes")
+    print("it exists")
+
+# Check the type of triangle
+if side1 == side2 == side3:
+    triangle_type = "Equilateral"
+elif side1 == side2 or side1 == side3 or side2 == side3:
+    triangle_type = "Isosceles"
+else:
+    triangle_type = "Scalene"
+
+# Print the type of triangle
+print("The triangle is:", triangle_type)
 
 """7. Write a Python program that performs arithmetic operations on two numbers."""
 
